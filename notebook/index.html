@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflitos Bélicos</title>
+    <link rel="stylesheet" href="css/styles/a11y-light.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <h1> Conflitos Bélicos</h1>
+    <h2> ACH2004 - Banco de Dados </h2>
+</header>
+<main class="notebook">
+    <section class="notebook__section --visual">
+        <h2 class="notebook__section-title"> Consultas </h2>
+        <p class="notebook__section-description">
+            Realizar qualquer consulta no banco de dados
+        </p>
+        <textarea cols="60" rows="5"></textarea>
+        <button type="button" name="five" class="notebook__section-submit-raw">Cadastrar</button>
+        <table>
+        </table>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 1 </h2>
+            <p class="notebook__section-description">
+                Permita cadastrar cadastrar conflitos bélicos
+            </p>
+            <div class="notebook__section-form">
+                <input type="text" name="nome" placeholder="Nome"/>
+                <select name="tipoConflito">
+                    <option value="">Tipo de Conflito</option>
+                    <option value="Religioso">Religioso</option>
+                    <option value="Etnico">Etnico</option>
+                    <option value="Territorial">Territorial</option>
+                    <option value="Economico">Economico</option>
+                </select>
+                <input type="text" name="paisesParticipantes" placeholder="Digite os países participantes"/>
+                <input type="text" name="numMortos" placeholder="Digite o número de mortos"/>
+                <input type="text" name="numFeridos" placeholder="Digite o número de feridos"/>
+                <input type="text" name="causas" placeholder="Digite as Causas">
+                <button type="button" name="one" class="notebook__section-button">Cadastrar</button>
+            </div>
+        </div>
+        <div class="notebook__section-result">
+            <table class="notebook__section--table">
+                <thead>
+                    <tr>
+                    <th> Código </th>
+                    <th> Nome </th>
+                    <th> Número de Feridos</th>
+                    <th> Número de Mortos</th>
+                    <th> Tipo Conflito </th>
+                    </tr>
+                </thead>
+                <tbody class="notebook__exercise-one">
+                    <tr>
+                        <td> Conflito 1</td>
+                        <td> Conflito 1</td>
+                        <td> Conflito 1</td>
+                        <td> Conflito 1</td>
+                        <td> Conflito 1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 2 </h2>
+            <p class="notebook__section-description">
+                Permita cadastrar grupos armado
+            </p>
+            <div class="notebook__section-form">
+                <input type="text" name="nome" placeholder="Nome"/>
+                <button type="button" name="two" class="notebook__section-button">Cadastrar</button>
+            </div>
+        </div>
+        <div class="notebook__section-result">
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Código </th>
+                    <th> Nome </th>
+                    <th> Numero de Feridos </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-two">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 3 </h2>
+            <p class="notebook__section-description">
+                Permita cadastrar divisões dentro de um grupo militar.
+            </p>
+            <div class="notebook__section-form">
+                <select name="codigoGa" class="notebook__select-grupo-armado">
+                    <option value="">Código do Grupo Armado</option>
+                </select>
+                <input type="number" name="numBaixas" placeholder="Número de Baixas">
+                <input type="number" name="numHomens" placeholder="Número de Homens">
+                <input type="number" name="numAvioes" placeholder="Número de Aviões">
+                <input type="number" name="numTanque" placeholder="Número de Tanques">
+                <input type="number" name="numBarcos"  placeholder="Número de Barcos">
+                <button type="button" name="three" class="notebook__section-button">Cadastrar</button>
+            </div>
+        </div>
+        <div class="notebook__section-result">
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Código GA </th>
+                    <th> Número Divisão </th>
+                    <th> Numero de Feridos </th>
+                    <th> Numero de Homens </th>
+                    <th> Numero de Avioes </th>
+                    <th> Numero de Tanques </th>
+                    <th> Numero de Barcos </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-three">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 4 </h2>
+            <p class="notebook__section-description">
+                Permita cadastrar líderes políticos.
+            </p>
+            <div class="notebook__section-form">
+                <select name="codigoGa" class="notebook__select-grupo-armado">
+                    <option value="">Código do Grupo Armado</option>
+                </select>
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="text" name="apoio" placeholder="Apoio">
+                <button type="button" name="four" class="notebook__section-button">Cadastrar</button>
+            </div>
+        </div>
+        <div class="notebook__section-result">
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Código GA </th>
+                    <th> Nome </th>
+                    <th> Apoio </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-four">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 5 </h2>
+            <p class="notebook__section-description">
+                Permita cadastrar chefes militares.
+            </p>
+            <div class="notebook__section-form">
+                <select name="codigoGa" class="notebook__select-grupo-armado">
+                    <option value="">Código do Grupo Armado</option>
+                </select>
+                <select name="codigoDivisao" class="notebook__select-divisao">
+                    <option value="">Código da Divisão</option>
+                </select>
+                <select name="nomeLp" class="notebook__select-lider-politico">
+                    <option value="">Nome do Líder Político</option>
+                </select>
+                <input type="text" name="faixa" placeholder="Número de Baixas">
+                <button type="button" name="five" class="notebook__section-button">Cadastrar</button>
+            </div>
+        </div>
+        <div class="notebook__section-result">
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Código </th>
+                    <th> Faixa </th>
+                    <th> Código GA </th>
+                    <th> Código Divisão </th>
+                    <th> Líder Político </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-five">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 6 </h2>
+            <p class="notebook__section-description">
+                Gerar histograma por tipo conflito e número de conflitos
+            </p>
+            <div class="notebook__section-canvas-wrapper">
+                <canvas id="notebook__section--graphic" width="400" height="400" style="height: 400px; width: 400px"></canvas>
+            </div>
+        </div>
+        <div class="notebook__section-result" style="align-self: center">
+            <pre>
+                <code class="sql">
+SELECT(
+  ( SELECT count(distinct codigo_conflito) FROM conflito_economico) as conflito_economico,
+  ( SELECT count(distinct codigo_conflito) FROM conflito_territorial) as conflito_territorial,
+  ( SELECT count(distinct codigo_conflito) FROM conflito_religioso) as conflito_religioso,
+  ( SELECT count(distinct codigo_conflito) FROM conflito_etnico) as conflito_etnico)
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 7 </h2>
+            <p class="notebook__section-description">
+                Listar os traficantes e os grupos armados (Nome) para os quais os traficantes fornecem armas “Barret M82” ou “M200 intervention”.
+            </p>
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Nome Traficante </th>
+                    <th> Arma </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-seven">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+        SELECT DISTINCT nome, nome_traficante, nome_arma
+       FROM grupo_armado
+       INNER JOIN (
+           SELECT nome_traficante, nome_arma, cod_ga
+           FROM traficante_forneceu
+           WHERE nome_arma = 'Barret M82' OR nome_arma = 'M200 Intervention'
+       ) as fornecimento
+       ON grupo_armado.codigo = fornecimento.cod_ga;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 8 </h2>
+            <p class="notebook__section-description">
+                Listar os 5 maiores conflitos em número de mortos.
+            </p>
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Nome Conflito </th>
+                    <th> Número de Mortos </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-eight">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+    SELECT nome, num_mortos
+    FROM conflito
+    ORDER BY num_mortos DESC
+    LIMIT 5;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 9 </h2>
+            <p class="notebook__section-description">
+                Listar as 5 maiores Organizações Mediadoras em Número de Mediações
+            </p>
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Nome Organização </th>
+                    <th> Quantidade de Mediação </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-nine">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+    SELECT nome, intermediacoes
+    FROM organizacoes_mediadoras
+    INNER JOIN (
+            SELECT codigo_org, COUNT(codigo_org ) as intermediacoes
+            FROM mediam_entrada
+            GROUP BY mediam_entrada.codigo_org
+    ) intermediacoes
+    ON organizacoes_mediadoras.codigo = intermediacoes.codigo_org
+    ORDER BY intermediacoes DESC
+    LIMIT 5;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 10 </h2>
+            <p class="notebook__section-description">
+                Listar os 5 maiores grupos armados com maior número de armas fornecidos.
+            </p>
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Nome Grupo Armado </th>
+                    <th> Quantidade de Armas </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-ten">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+        SELECT cod_ga, sum(numero_de_armas) as qtd_armas
+        FROM
+        traficante_forneceu
+        GROUP BY cod_ga
+        ORDER BY qtd_armas DESC
+        limit 5;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 11 </h2>
+            <p class="notebook__section-description">
+                Listar o país e número de conflitos com maior número de conflitos religiosos.
+            </p>
+            <table class="notebook__section--table">
+                <thead>
+                <tr>
+                    <th> Nome Grupo Armado </th>
+                    <th> Quantidade de Armas </th>
+                </tr>
+                </thead>
+                <tbody class="notebook__exercise-eleven">
+                <tr>
+                    <td> Conflito 1</td>
+                    <td> Conflito 1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+        SELECT pais, count( distinct codigo) as numero_conflito
+        FROM conflito
+        INNER JOIN conflito_pais cp on conflito.codigo = cp.codigo_conflito
+        LEFT JOIN conflito_religioso cr on conflito.codigo = cr.codigo_conflito
+        WHERE religiao IS NOT NULL
+        GROUP BY pais
+        ORDER BY numero_conflito DESC
+        LIMIT 1;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <hr>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 12 </h2>
+            <p class="notebook__section-description">
+                Exclusividade da hierarquia de conflitos.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+CREATE OR REPLACE FUNCTION valida_hierarquia_economico() RETURNS TRIGGER AS
+    begin
+        IF EXISTS( SELECT codigo_conflito FROM conflito_etnico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_religioso WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_territorial WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+language plpgsql;
+
+CREATE OR REPLACE FUNCTION valida_hierarquia_etnico() RETURNS TRIGGER AS
+    begin
+        IF EXISTS( SELECT codigo_conflito FROM conflito_economico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_religioso WHERE codigo_conflito = NEW.codigo_conflito) THEN
+
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_territorial WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+language plpgsql;
+
+CREATE OR REPLACE FUNCTION valida_hierarquia_religioso() RETURNS TRIGGER AS
+    begin
+        IF EXISTS( SELECT codigo_conflito FROM conflito_etnico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_economico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_territorial WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+language plpgsql;
+
+CREATE OR REPLACE FUNCTION valida_hierarquia_territorial() RETURNS TRIGGER AS
+    begin
+        IF EXISTS( SELECT codigo_conflito FROM conflito_etnico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_religioso WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        ELSIF EXISTS( SELECT codigo_conflito FROM conflito_economico WHERE codigo_conflito = NEW.codigo_conflito) THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+language plpgsql;
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 13 </h2>
+            <p class="notebook__section-description">
+                Qualquer chefe militar obedece no mínimo a um líder político.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+create table if not exists chefe_militar
+(
+    codigo serial not null primary key ,
+    faixa varchar(150),
+    cod_ga integer,
+    cod_divisao integer,
+    cod_lp text not null,
+
+    FOREIGN KEY (cod_ga, cod_divisao) REFERENCES divisao(codigo_ga, numero_divisao) ON UPDATE CASCADE,
+    FOREIGN KEY (cod_lp) REFERENCES lider_politico(nome) ON UPDATE CASCADE
+
+);
+
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 14 </h2>
+            <p class="notebook__section-description">
+                Uma divisão é dirigida pelo menos por um chefe militar.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+create or replace function valida_existencia_unico_chefe_militar() returns trigger as
+    begin
+        IF (SELECT count(*) as total from chefe_militar WHERE cod_divisao = OLD.cod_divisao AND cod_ga = OLD.cod_ga) <= 1 THEN
+            RETURN NULL;
+        end if;
+        IF (tg_op = ''UPDATE'') THEN
+            RETURN NEW;
+        end if;
+        RETURN OLD;
+    end;
+language plpgsql;
+
+CREATE TRIGGER valida_existencia_unico_chefe_militar
+BEFORE UPDATE OR DELETE ON chefe_militar
+FOR EACH ROW EXECUTE PROCEDURE valida_existencia_unico_chefe_militar();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 15 </h2>
+            <p class="notebook__section-description">
+                Uma divisão é dirigida por três chefes militares como máximo.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+CREATE OR REPLACE FUNCTION valida_maximo_chefe_militares() RETURNS TRIGGER as
+    begin
+        if(SELECT count(*) FROM chefe_militar WHERE cod_divisao = NEW.cod_divisao AND cod_ga = NEW.cod_ga) >= 3 THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+language plpgsql;
+
+CREATE TRIGGER valida_maximo_chefe_militares
+BEFORE INSERT OR UPDATE ON chefe_militar
+FOR EACH ROW EXECUTE PROCEDURE valida_maximo_chefe_militares();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 16 </h2>
+            <p class="notebook__section-description">
+                Todo Grupo Armado Dispoe de no mínimo uma divisao
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+CREATE OR REPLACE FUNCTION validez_existencia_divisao_grupo_armado() RETURNS TRIGGER as
+    begin
+        IF( SELECT COUNT(*) FROM divisao WHERE codigo_ga = OLD.codigo_ga) = 1 THEN
+            RETURN NULL;
+        end if;
+        IF(tg_op = ''UPDATE'') THEN
+            RETURN NEW;
+        end if;
+        RETURN OLD;
+    end;
+ LANGUAGE plpgsql;
+
+CREATE TRIGGER validez_existencia_divisao_grupo_armado
+BEFORE DELETE OR UPDATE ON divisao
+FOR EACH ROW EXECUTE PROCEDURE validez_existencia_divisao_grupo_armado();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 17 </h2>
+            <p class="notebook__section-description">
+                Em um conflito bélico participam como mínimo dois grupos armados.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+
+CREATE OR REPLACE FUNCTION validez_minimo_grupos_armados_ativos_participantes() RETURNS TRIGGER AS
+
+    declare
+        participantes_ativos INT;
+    begin
+        participantes_ativos = (
+            SELECT count(*) FROM
+                (SELECT codigo_ga, codigo_conflito, max(data_entrada) as data_entrada
+                 FROM entrada_participacao e
+                 WHERE e.codigo_conflito = NEW.codigo_conflito
+                 GROUP BY codigo_ga, codigo_conflito
+                ) ultima_entrada
+            LEFT JOIN
+                (SELECT codigo_ga, codigo_conflito, max(data_saida) as data_saida
+                 FROM saida_participacao s
+                 WHERE s.codigo_conflito = NEW.codigo_conflito
+                 GROUP BY codigo_ga, codigo_conflito
+                ) ultima_saida
+            ON ultima_entrada.codigo_conflito = ultima_saida.codigo_conflito AND ultima_entrada.codigo_ga = ultima_saida.codigo_ga
+            WHERE ultima_entrada.data_entrada > ultima_saida.data_saida OR ultima_saida.data_saida IS NULL
+        );
+        IF participantes_ativos <= 2 THEN
+            RETURN NULL;
+        end if;
+        RETURN NEW;
+    end;
+
+ LANGUAGE plpgsql;
+
+DROP TRIGGER validez_minimo_grupos_armados_ativos_participantes ON saida_participacao;
+
+CREATE TRIGGER validez_minimo_grupos_armados_ativos_participantes
+BEFORE INSERT ON saida_participacao
+FOR EACH ROW EXECUTE PROCEDURE validez_minimo_grupos_armados_ativos_participantes();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 18 </h2>
+            <p class="notebook__section-description">
+                Qualquer conflito afeta pelo menos um país.
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+CREATE OR REPLACE FUNCTION validez_unico_pais() RETURNS TRIGGER AS
+    begin
+        IF( SELECT max(codigo_conflito) FROM conflito_pais WHERE codigo_conflito = OLD.codigo_conflito) <= 1 THEN
+            RETURN NULL;
+        end if;
+        IF(tg_op = ''UPDATE'') THEN
+            RETURN NEW;
+        end if;
+        RETURN OLD;
+    end;
+ language plpgsql;
+
+DROP TRIGGER validez_unico_pais ON conflito_pais;
+
+CREATE TRIGGER validez_unico_pais
+BEFORE UPDATE OR DELETE ON conflito_pais
+FOR EACH ROW EXECUTE PROCEDURE validez_unico_pais();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 19 </h2>
+            <p class="notebook__section-description">
+                Manter a consistência das baixas totais em cada grupo armado, a partir das baixas produzidas nas suas divisões; gerar e assegurar a sequencialidade do número de divisão dentro do grupo armado.        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+
+CREATE OR REPLACE FUNCTION atualizar_numero_de_baixas() RETURNS TRIGGER AS
+    begin
+        IF(tg_op = ''UPDATE'') THEN
+            UPDATE grupo_armado
+            SET numero_baixas = numero_baixas + NEW.num_baixas - OLD.num_baixas
+            WHERE codigo = NEW.codigo_ga;
+            RETURN NEW;
+        end if;
+        IF(tg_op = ''DELETE'') THEN
+            UPDATE grupo_armado
+            SET numero_baixas = numero_baixas - OLD.num_baixas
+            WHERE codigo = NEW.codigo_ga;
+            RETURN OLD;
+        end if;
+        UPDATE grupo_armado
+        SET numero_baixas = numero_baixas + NEW.num_baixas
+        WHERE codigo = NEW.codigo_ga;
+        RETURN NEW;
+    end;
+ language plpgsql;
+
+DROP TRIGGER atualizar_numero_baixas ON divisao;
+
+CREATE TRIGGER atualizar_numero_baixas
+AFTER INSERT OR UPDATE ON divisao
+FOR EACH ROW EXECUTE PROCEDURE atualizar_numero_de_baixas();
+                </code>
+            </pre>
+        </div>
+    </section>
+    <section class="notebook__section --visual">
+        <div class="notebook__section-data">
+            <h2 class="notebook__section-title"> Exercicio 20 </h2>
+            <p class="notebook__section-description">
+                Gerar e assegurar a sequencialidade do número de divisão dentro do grupo armado.
+            </p>
+        </div>
+        <div class="notebook__section-result">
+            <pre>
+                <code class="sql">
+CREATE OR REPLACE FUNCTION criar_id_divisao() RETURNS TRIGGER AS
+    declare
+        ultimo_id INT;
+    begin
+        ultimo_id = ((SELECT max(numero_divisao) FROM divisao WHERE codigo_ga = NEW.codigo_ga ORDER BY numero_divisao DESC LIMIT 1) + 1);
+        IF ultimo_id IS NOT NULL THEN
+            NEW.numero_divisao = ultimo_id;
+        ELSE
+            NEW.numero_divisao = 1;
+        end if;
+        RETURN NEW;
+    end;
+ language  plpgsql;
+
+CREATE TRIGGER criar_id_divisao
+BEFORE INSERT ON divisao
+FOR EACH ROW EXECUTE PROCEDURE criar_id_divisao();
+                </code>
+            </pre>
+        </div>
+    </section>
+</main>
+    <script src="js/highlight.pack.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="js/converters.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/chart.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

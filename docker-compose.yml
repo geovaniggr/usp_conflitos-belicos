@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  postgres:
+    container_name: db_conflitos
+    image: postgres:12.4
+    restart: 'always'
+    network_mode: host
+    volumes:
+      - ./tmp/postgres:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - "POSTGRES_DB=conflitos_belicos"
+      - "POSTGRES_PASSWORD=docker"
+  app:
+    container_name: app_conflitos
+    network_mode: host
+    build: .
+    ports:
+    - '3000:3000'
+

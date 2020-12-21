@@ -1,0 +1,4 @@
+{:dbtype   "postgres"
+ :dbname   "conflitos_belicos"
+ :user     "postgres"
+ :password "docker"}
